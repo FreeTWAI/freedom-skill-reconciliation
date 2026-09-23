@@ -1,0 +1,11 @@
+{
+  "format": "freedom.skill-book/v1",
+  "id": "freedom-skill-reconciliation",
+  "title": "商家對帳入門",
+  "version": "0.1.0",
+  "guild_key": "guild_commerce_settlement",
+  "entry": "SKILL.md",
+  "execution": "manual_or_member_owned_assistant",
+  "repository": "https://github.com/FreeTWAI-AI/freedom-skill-reconciliation",
+  "license": "NOASSERTION"
+}
