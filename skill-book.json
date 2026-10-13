@@ -6,6 +6,6 @@
   "guild_key": "guild_commerce_settlement",
   "entry": "SKILL.md",
   "execution": "manual_or_member_owned_assistant",
-  "repository": "https://github.com/FreeTWAI-AI/freedom-skill-reconciliation",
+  "repository": "https://github.com/FreeTWAI/freedom-skill-reconciliation",
   "license": "NOASSERTION"
 }
