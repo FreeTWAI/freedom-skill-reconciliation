@@ -4,14 +4,14 @@ from decimal import Decimal, ROUND_HALF_UP
 class TestLedgerCalculations(unittest.TestCase):
     def test_transaction_balance_validation_valid(self):
         # Transaction balance must balance to zero (credits == debits)
-        credits = sum([Decimal('100.00')])
-        debits = sum([Decimal('50.00'), Decimal('50.00')])
+        credits = Decimal('100.00')
+        debits = Decimal('50.00') + Decimal('50.00')
         self.assertEqual(credits, debits, "Credits must equal debits for a valid transaction")
 
     def test_transaction_balance_validation_invalid(self):
         # Invalid transaction where credits != debits
-        credits = sum([Decimal('100.00')])
-        debits = sum([Decimal('50.00'), Decimal('49.99')])
+        credits = Decimal('100.00')
+        debits = Decimal('50.00') + Decimal('49.99')
         self.assertNotEqual(credits, debits, "Mismatching credits and debits should be detected")
 
     def test_floating_point_rounding(self):
